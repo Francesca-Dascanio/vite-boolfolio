@@ -1,6 +1,5 @@
 <script>
 import { store } from '../store';
-import axios from 'axios';
 
 
 export default {
@@ -11,31 +10,22 @@ export default {
         }
     },
     methods: {
-        getProjects: function () {
-            // Chiamata all'API da App
-            axios
-                .get('http://127.0.0.1:8000/api/projects', {
-                    params: {
-
-                    }
-                })
-                .then((response) => {
-                    console.log(response.data);
-                    // this.store.projects = response;
-                    // console.log(this.store.projects);   
-                });
-        }
-    },
-    created() {
-            this.getProjects();
+       
     }
 }
 </script>
 
 <template>
-    <h2>
-        Projects
-    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>
+                    All projects
+                </h2>
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>

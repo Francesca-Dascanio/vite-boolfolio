@@ -8,4 +8,4 @@ Nel componente principale della nostra Vue App facciamo una chiamata API all'end
 Stampiamo in console i risultati e verifichiamo di ricevere i dati correttamente. OK
 
 Milestone 5
-Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visualizzare un progetto. Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite API.
+Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visualizzare un progetto. Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite API. OK
