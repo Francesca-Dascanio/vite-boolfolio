@@ -1,25 +1,24 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
+import AppCard from './components/AppCard.vue'
 
 
 export default {
     name: 'App',
     components: {
-        AppHeader,
-        AppMain
+        AppCard
     }
 }
 </script>
 
 <template>
 
-    <AppHeader/>
-    <AppMain/>
+<h1>
+    Vite Boolfolio: projects!
+</h1>
 
 </template>
 
 <style lang="scss">
-@use './styles/main.scss'
+// @use './styles/main.scss'
 
 </style>
