@@ -1,7 +1,7 @@
 Milestone 3
 nome repo 2: vite-boolfolio
 Iniziamo ad occuparci della parte front-office della nostra applicazione: creiamo un nuovo progetto Vue 3 con Vite e installiamo axios.
-Colleghiamo questo progetto ad una repo separata.
+Colleghiamo questo progetto ad una repo separata. OK
 
 Milestone 4
 Nel componente principale della nostra Vue App facciamo una chiamata API all'endpoint costruito nel progetto Laravel (milestone 1) e recuperiamo tutti i progetti dal nostro back-end.
