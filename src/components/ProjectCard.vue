@@ -22,7 +22,7 @@ export default {
             <div class="col">
                 <div class="cards d-flex flex-wrap justify-content-between">
                     <div class="card mb-2" style="width: 18rem;" v-for="project in store.projects">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" :src="project.full_img_path" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">
                                 {{ project.title }}

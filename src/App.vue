@@ -26,8 +26,8 @@ export default {
                     }
                 })
                 .then((response) => {
-                    console.log(response.data.data.data.data);
-                    return this.store.projects = response.data.data.data.data;
+                    console.log(response);
+                    return this.store.projects = response.data.data.data;
                 });
         }
     },
