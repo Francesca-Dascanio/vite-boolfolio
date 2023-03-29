@@ -1,6 +1,8 @@
 <script>
 import { store } from '../store';
 
+
+
 export default {
     name: 'AppCard',
     data () {
@@ -9,7 +11,7 @@ export default {
         }
     },
     methods: {
-       
+        
     }
 }
 </script>
