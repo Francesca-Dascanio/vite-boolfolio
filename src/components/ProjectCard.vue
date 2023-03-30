@@ -24,23 +24,19 @@ export default {
 
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="cards d-flex flex-wrap justify-content-between">
-                    <div class="card mb-2" style="width: 18rem;" v-for="project in store.projects">
-                        <img class="card-img-top" :src="project.img ?? defaultImg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                {{ project.title }}
-                            </h5>
-                            <p class="card-text" v-if="project.description ? project.description : '-'">
-                                {{ project.description }}
-                            </p>
-                            <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="btn btn-primary">
-                                Single Project
-                            </router-link>
-                        </div>
-                    </div>
+        <div class="row g-3 mb-4">
+            <div class="card col-12 col-sm-4 col-md-3" style="width: 18rem;" v-for="project in store.projects">
+                <img class="card-img-top" :src="project.img ?? defaultImg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{ project.title }}
+                    </h5>
+                    <p class="card-text" v-if="project.description ? project.description : '-'">
+                        {{ project.description }}
+                    </p>
+                    <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="btn btn-primary">
+                        Single Project
+                    </router-link>
                 </div>
             </div>
         </div>

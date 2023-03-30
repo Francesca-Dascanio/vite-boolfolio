@@ -13,7 +13,8 @@ export default {
     data () {
         return {
             store,
-            projects: []
+            projects: [],
+            project: null
         }
     },
     methods: {
@@ -26,8 +27,8 @@ export default {
                     }
                 })
                 .then((response) => {
-                    console.log(response);
-                    return this.store.projects = response.data.data.data;
+                    console.log(response.data.projects.data);
+                    return this.store.projects = response.data.projects.data;
                 });
         }
     },
@@ -47,14 +48,8 @@ export default {
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row g-3 mb-4">
-            <!-- Qui cards -->
-            <div v-for="project in store.projects" class="col-12 col-sm-4 col-md-3">
-                <ProjectCard :project="project" />
-            </div>
-        </div>
-    </div>
+    <ProjectCard :project="project" />
+
 
 </template>
 
