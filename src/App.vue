@@ -2,51 +2,28 @@
 import { store } from './store';
 import axios from 'axios';
 
-import ProjectCard from './components/ProjectCard.vue';
-import AppMain from './components/AppMain.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 export default {
     name: 'App',
     components: {
-        ProjectCard,
-        AppMain
+        AppHeader,
+        AppFooter
     },
     data () {
         return {
             store
         }
-    },
-    methods: {
-        getProjects: function () {
-            // Chiamata all'API da App
-            axios
-                .get('http://127.0.0.1:8000/api/projects', {
-                    params: {
-
-                    }
-                })
-                .then((response) => {
-                    console.log(response);
-                    return this.store.projects = response.data.data.data;
-                });
-        }
-    },
-    created() {
-        this.getProjects();
     }
 }
 </script>
 
 <template>
-
-<h1 class="text-center my-3">
-    Vite Boolfolio
-</h1>
-
-<AppMain />
-<ProjectCard />
-
-
+    <AppHeader />
+    <router-view></router-view>
+    <AppFooter />
 </template>
 
 <style lang="scss">
