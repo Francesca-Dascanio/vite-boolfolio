@@ -19,13 +19,13 @@ export default {
                 .get(`http://127.0.0.1:8000/api/projects/${this.$route.params.slug}`)
                 .then((response) => {
                     console.log(response);
-                    return this.project = response.data;
+                    return this.project = response.data.project;
 
                 });
         }
     },
     created() {
-        this.getSingleProject;
+        this.getSingleProject();
     }
 }
 </script>
