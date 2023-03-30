@@ -36,9 +36,9 @@ export default {
                             <p class="card-text" v-if="project.description ? project.description : '-'">
                                 {{ project.description }}
                             </p>
-                            <a href="#" class="btn btn-primary">
-                                View
-                            </a>
+                            <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="btn btn-primary">
+                                Single Project
+                            </router-link>
                         </div>
                     </div>
                 </div>

@@ -45,13 +45,10 @@ export default {
                                     </router-link>
                                 </li>
                                 <li class="nav-item active">
-                                    <!-- <a class="nav-link" href="#">
-                                        Single Project
+                                     <a class="nav-link" href="#">
+                                        About me
                                         <span class="sr-only">(current)</span>
-                                    </a> -->
-                                    <router-link :to="{ name: 'project' }" class="nav-link">
-                                        Single Project
-                                    </router-link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
