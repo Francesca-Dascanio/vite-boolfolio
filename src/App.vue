@@ -1,6 +1,5 @@
 <script>
 import { store } from './store';
-import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';

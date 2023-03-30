@@ -1,12 +1,19 @@
 <script>
 import { store } from '../store';
 
+import axios from 'axios';
+
+import ProjectCard from '../components/ProjectCard.vue';
 
 export default {
     name: 'AppProjects',
+    components: {
+        ProjectCard
+    },
     data () {
         return {
-            store
+            store,
+            projects: []
         }
     },
     methods: {
@@ -37,7 +44,14 @@ export default {
                 <h2>
                     All projects
                 </h2>
-                <!-- Qui cards -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-3 mb-4">
+            <!-- Qui cards -->
+            <div v-for="project in store.projects" class="col-12 col-sm-4 col-md-3">
+                <ProjectCard :project="project" />
             </div>
         </div>
     </div>

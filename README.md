@@ -24,7 +24,7 @@ Testiamo la chiamata API tramite Postman e assicuriamoci di ricevere i dati corr
 Milestone 3
 nome repo 2: vite-boolfolio
 Aggiungiamo Vue Router sul front office e creiamo almeno 2 rotte:
-Rotta per l'index dei progetti
+Rotta per l'index dei progetti OK
 Rotta per lo show del singolo progetto
 
 Milestone 4

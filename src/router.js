@@ -17,6 +17,11 @@ const router = createRouter({
             name: 'projects',
             component: AppProjects
         },
+        {
+            path: '/project',
+            name: 'project',
+            component: AppProjects
+        },
     ]
 });
 
